@@ -1,8 +1,8 @@
 class Ftxui < Formula
   desc "C++ Functional Terminal User Interface"
   homepage "https://arthursonzogni.github.io/FTXUI/"
-  url "https://github.com/ArthurSonzogni/FTXUI/archive/refs/tags/v7.0.2.tar.gz"
-  sha256 "28da2c3389440af869f8781679b537c4a3d5b4df42aeab54eb1564d1b61af864"
+  url "https://github.com/ArthurSonzogni/FTXUI/releases/download/v7.0.2/source.tar.gz"
+  sha256 "d6db4318149601f5834ea6ea1f31900ead7cfa78b55846066b183956af1876b3"
   license "MIT"
   head "https://github.com/ArthurSonzogni/FTXUI.git", branch: "main"
 
@@ -21,7 +21,7 @@ class Ftxui < Formula
     args = %W[
       -DBUILD_SHARED_LIBS=ON
       -DCMAKE_INSTALL_RPATH=#{rpath}
-      -DFTXUI_BUILD_DOCS=ON
+      -DFTXUI_BUILD_DOCS=OFF
       -DFTXUI_BUILD_EXAMPLES=OFF
       -DFTXUI_BUILD_TESTS=OFF
       -DFTXUI_QUIET=ON
